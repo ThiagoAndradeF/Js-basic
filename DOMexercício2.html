@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <input type="text" value="" id="nameUser">
+    <button onclick="escreve()">Só clica</button>
+    <div id="msg"></div>
+    <script>
+        
+        var nameUser=document.querySelector("#nameUser");
+        function escreve(){
+            var nome= nameUser.value; 
+            var msg= document.querySelector("#msg").innerHTML= "Bem vindo, <b>"+ nome + "</b>" ;      
+        }
+    
+
+
+
+    </script>
+
+
+
+</body>
+</html>
